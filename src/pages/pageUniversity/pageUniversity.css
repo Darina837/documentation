@@ -1,0 +1,9 @@
+#create-university, #delete-university, #rename-university, #get-informaion-university {
+    padding-top: 60px;
+}
+
+.code {
+    background-color: rgb(46, 45, 43);
+    padding: 20px 30px 20px;
+    border-left: 20px solid rgb(0, 0, 0);
+}

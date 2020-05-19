@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Router, Switch, Route } from 'react-router-dom';
+import { createBrowserHistory as createHistory } from 'history';
+
+import PageMain from './pages/pageMain/PageMain';
+import PageGuide from './pages/pageGuide/PageGuide';
+import PageUniversity from './pages/pageUniversity/PageUniversity';
+import PageFaculty from './pages/pageFaculty/PageFaculty';
+import PageDepartment from './pages/pageDepartment/PageDepartment';
+import PageType from './pages/pageType/PageType';
+
+const history = createHistory();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={history}>
+      <Switch>
+        <Route path='/' component={PageMain} exact />
+        <Route path='/guide/' component={PageGuide} exact />
+        <Route path='/guide/university' component={PageUniversity} />
+        <Route path='/guide/faculty' component={PageFaculty} />
+        <Route path='/guide/department' component={PageDepartment} />
+        <Route path='/guide/type' component={PageType} />
+      </Switch>
+    </Router>
   );
 }
 
