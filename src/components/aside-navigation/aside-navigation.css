@@ -36,3 +36,7 @@ aside > ul > li > ul > li > a:hover {
     color: rgba(78, 110, 131, 0.562);
     text-decoration: none;
 }
+
+.active {
+    border-left: 5px solid rgb(34, 32, 65);
+}
