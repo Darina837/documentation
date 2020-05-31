@@ -15,7 +15,7 @@ export default function PageMain(props) {
             <Header />
             <main>
                 <div className='wrapper-main'>
-                    <img src={logo} />
+                    <img src={logo} alt='' />
                     <h1>ScheduleNURE</h1>
                     <Link to='/guide/introduction'><ReactBootstrap.Button variant="success">Начать <span><BsArrowRight /></span></ReactBootstrap.Button></Link>
                 </div>
