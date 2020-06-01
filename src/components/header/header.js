@@ -125,7 +125,7 @@ export default function Header(props) {
                     <ReactBootstrap.Navbar.Brand href='/'>ScheduleNURE Docs</ReactBootstrap.Navbar.Brand>
 
                     <ReactBootstrap.Nav className='mr-auto'>
-                        <ReactBootstrap.Nav.Link href='/our-site'>Main site <span><RiExternalLinkLine /></span></ReactBootstrap.Nav.Link>
+                        <ReactBootstrap.Nav.Link href='http://schedule-nure.dxrk.cc/' target='_blank'>Main site <span><RiExternalLinkLine /></span></ReactBootstrap.Nav.Link>
                     </ReactBootstrap.Nav>  
 
                     <ReactBootstrap.Form inline>
